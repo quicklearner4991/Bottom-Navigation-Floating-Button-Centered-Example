@@ -32,7 +32,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-          backgroundColor: WodlColors.APP_PRIMARY_COLOR,
+          backgroundColor: Colors.green,
           elevation: 0,
           shape: StadiumBorder(side: BorderSide(color: Colors.white, width: 4)),
           child: const Icon(
@@ -92,9 +92,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   ),
                   Text(
                     'Home',
-                    style: TextStyle(fontSize: WodlDimens.SPACE12,
+                    style: TextStyle(fontSize: 12,
                         color: pageIndex == 0
-                            ? WodlColors.APP_PRIMARY_COLOR
+                            ? Colors.green
                             : Colors.black),
                   )
                 ],
@@ -102,9 +102,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
               Container(
                 child: Text(
                   'Scan',
-                  style: TextStyle(fontSize: WodlDimens.SPACE12,
+                  style: TextStyle(fontSize: 12,
                       color: pageIndex == 1
-                          ? WodlColors.APP_PRIMARY_COLOR
+                          ? Colors.green
                           : Colors.black),
                 ),
                 margin: EdgeInsets.fromLTRB(0, 40.0, 0, 0),
@@ -130,8 +130,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   ),
                   Text(
                     'Journal',
-                    style: TextStyle(fontSize: WodlDimens.SPACE12 ,
-                        color: pageIndex == 2 ? WodlColors.APP_PRIMARY_COLOR:
+                    style: TextStyle(fontSize: 12 ,
+                        color: pageIndex == 2 ? Colors.green:
                         Colors.black),
                   )
                 ],
